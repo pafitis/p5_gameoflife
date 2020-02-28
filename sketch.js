@@ -78,6 +78,6 @@ function draw() {
   next = calcNext(grid, next);
 
   grid = next;
-  saveFrames('output/frame_####.pmg', 'png', framerate = 30)
+  // saveFrames('output/frame_####.pmg', 'png', framerate = 30)
 }
 
