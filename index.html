@@ -3,9 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conway's Game of Life</title>
+    <title>Sine Wave Gif</title>
     <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <!-- <script src="code/sinegif.js"></script> -->
     <script src="code/conway.js"></script>
+    <script src="code/CCapture.all.min.js"></script>
+    <script src="js/gif.worker.js"></script>
+
+    <script>
+      var capturer = new CCapture( {
+        framerate: 60,
+        verbose: true,
+        format: 'gif',
+        workersPath: './js/'
+      } );
+    </script>
+
   </head>
   <body>
   </body>
